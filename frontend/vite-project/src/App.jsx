@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     async function APICall() {
-      const response = await fetch('http://localhost:3000/api/products')
+      const response = await fetch('https://data-fetching-ppoe.onrender.com/api/products')
 
       const data = await response.json()
       setProducts(data)
